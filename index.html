@@ -11,12 +11,12 @@
 
 </head>
 <body>
-    <div class="container-fluid vw-100 vh-100 p-0">
+    <div class="container-fluid vw-100 vh-100 ps-3 pe-3">
         <div class="row w-100 h-100 m-0">
-            <div class="col-5 h-100  p-0">
+            <div class="col-md-5 h-100  p-0">
               <!-- first section card -->
                 <div class="h-100  x overflow-auto" style=" border-right:solid 1px #e8e8e8;">
-                  <h6 class="sticky-top p-3 ps-1"style="background:#fcfbff;">Talent Schedule</h6>
+                  <h6 class="sticky-top p-3 ps-3"style="background:#fcfbff;">Talent Schedule</h6>
                     <div class="row mx-md-1  ">
                       
                       <!-- <div class="col-6 px-md-1"><div class="card p-3 border rounded-4  text-white h6" style="background: linear-gradient(#0082E6, #3fbafe);">
@@ -190,56 +190,136 @@
                 
               
             </div>
-            <div class="col-7 h-100  p-0">
+            <div class="col-md-7 h-100  p-0">
               <div class=" h-25  overflow-hidden">
-                <h6 class="sticky-top p-3 ps-1 m-0"style="background-color:White;">Talent Schedule</h6>
+                
+                <h6 class="sticky-top p-3 ps-4 m-0"style="background-color:White;">Talent Schedule</h6>
 
-                <div class="border border-secondary-2"  style="height:120px ; ">
-                 <div><img class="" src="./img_avatar.png" alt="profile" style="height:118px;width:110px ;border-left:solid 3px #9892c3;"></div>                  
+                 <div class="mb-4 ps-4 hstack gap-3 border border-secondary-2 shadow-sm" style="border-left:solid 3px #9892c3;">
+                  <img class="" src="./img_avatar.png" alt="profile" style="height:118px;width:110px ;" width="100px" style="border-radius: 80px;">
+                  <h1 style="margin-left:140px ;">Amber Green</h1>                  
                 </div>
               </div>
-              <div class="h-75  x overflow-hidden">
-               <div>
-               <form class=" mt-1 ms-4 p-2 " >
+              <div class="h-75  x overflow-hidden" style="background-color: #fbfbfd;">                              
+             <div>
+              <div class=" text ms-1 me-3 mt-2">
+                <form class=" mt-1 ms-1 p-3  "  >
+                  <div class="position-relative pt-1 mb-4">
+                    <div class="position-absolute top-0 start-50 translate-middle"><div class="h5 "style="margin-right:80px ;">Podcast Schedule</div>                  </div>
+                    <div class="position-absolute top-0 end-0 translate-middle" style="margin-right:70px ;">
+                      <div class="" >
+                        <div class="form-check form-switch "  for="flexSwitchCheckDefault" >
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Private</label>
+                        </div>
+                      </div>  
+                    </div>
+                    </div>
 
-                <div class="mb-3 me-5 d-flex flex-row-reverse" >
-                  <div class="form-check form-switch "  for="flexSwitchCheckDefault" >
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                    <label class="form-check-label " for="flexSwitchCheckDefault">Private</label>
+<!-- 
+                  <div class="mb-3 ">
+                    <div class="form-floating">
+                      <input class="form-control h3" placeholder="Podcast" id="floatinginput" autocomplete="off"></input>
+                      <label for="floatingTextarea"><h6>Podcast name</h6></label>
+                    </div>
                   </div>
-                </div>
 
+                  <div class="mb-3 ">
+                    <select class="form-select h6" aria-label="Default select example">
+                      <option selected>Select Time-Zone</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    </div>
 
-                <div class="mb-3 d-flex">
-                  <label class="form-label" for="Podcast_name" style="line-height: 35px; margin-bottom: 0px ; margin-right: 20px;">
-                    <h6 class="mt-2" >Name Podcast</h6>
-                  </label>
-                  <input type="text" id="Podcast_name" class="form-control" style="max-width: 200px;">
-                  <label class="form-label" for="Podcast_name" style="line-height: 35px; margin-bottom: 0px; margin-right: 20px;">
-                    <h6 class="ms-2 mt-2" >Date & Time</h6>
-                  </label>
-                  <input class="form-control"  type="datetime-local" id="Datetime" style="max-width: 200px;">
-               
-                </div>
-
-                  <div class="mb-3 d-flex">
-                    <label class="form-label" for="text_area" style="line-height: 35px; margin-bottom: 0px; margin-right: 20px;">
-                      <h6 style="margin: 0px; height: 100%; line-height: 35px; max-width: 108px;">Episode Summary (max 4000 char.):</h6>
-                    </label>
-                    <textarea maxlength="4000" type="text" id="text_area" class="form-control" style="max-width: 490px;"></textarea>
+                  <div class="mb-3 d-flex ">
+                    <label class="h6 ">Schedule <span class="d-flex flex-column">Date & time</span></label>
+                    <input class="form-control shadow-sm ms-5"  type="date" min="2019-06-02" id="Datetime" style="max-width: fit-content;">
+                  <input class="form-control shadow-sm ms-5" type="time" min="2019-06-02" style="max-width: 200px;"/>
                   </div> 
-                  
-                  <div class="mb-3 d-flex">
-                    <label class="form-label" for="Podcast_name" style="line-height: 35px; margin-bottom: 0px; margin-right: 20px;">
-                      <h6 class="ms-2 mt-2" >Podcast</h6>
-                    </label>
-                    <select   class="form-control"  type="datetime-local" id="Datetime" style="max-width: 200px;" required="required">
-                      <option value="">Select your option:</option>
-                      <option value="String" >Value A</option>
-                     </select>
-                  </div>
-                  
-              </form>
+
+                   
+                    <div class="mb-3 d-flex">
+                      <label class="form-label" for="text_area" style="line-height: 35px; margin-bottom: 0px; margin-right: 20px;">
+                        <h6 style="margin: 0px; height: 100%; line-height: 35px; max-width: 108px;">Episode Summary (max 4000 char.):</h6>
+                      </label>
+                      <textarea maxlength="4000" type="text" id="text_area" class="form-control " style="max-width: 490px; max-height: 130px;"></textarea>                      
+                    </div> 
+                    
+                    <div class="mb-2 d-flex">
+                      <label class="form-label"  style="line-height: 35px; margin-bottom: 0px; margin-right: 20px;">
+                        <h6 class="ms-0 mt-2" >Podcast Type</h6>
+                      </label>
+                      <input class="form-control ms-3" list="Podcast_type" name="Podcast_type" id="Podcast_type" style="max-width: 200px;" autocomplete="off">
+                        <datalist id="Podcast_type">
+                          <option value="live">
+                          <option value="session">
+                          <option value="theraphy">
+                       </datalist>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit"   class=" btn btn-outline-light border-0 rounded-5 shadow btn-sm w-25 "style="background: linear-gradient( #B0A8B9,#4B4453);"><h6 class="pt-1">SCHEDULE</h6></div>
+                    </div>
+                    <hr> -->
+                    <div class="d-flex mb-3 ">
+                      <label class="h6 me-5 w-25 mt-1 ">
+                        Podcast Name
+                      </label>
+                      <input maxlength="30" class="form-control  shadow-sm" type="text" style="height: 25px;width: 350px;">
+                    </div>
+
+                     <div class="d-flex mb-3">
+                      <label class="h6 me-5 w-25 mt-0">
+                       Time Zone
+                      </label>
+                      <select class="form-select  shadow-sm h6" aria-label="Default select example" style="height: 25px;width: 350px;font-size: 9px;font-weight: 700;">
+                        <option selected>Select Time-Zone</option>
+                        <option value="1">zone-One</option>
+                        <option value="2">zone-Two</option>
+                        <option value="3">zone-Three</option>
+                      </select>              
+                    </div>
+                    
+                      <div class="d-flex mb-3">
+                      <label class="h6 me-5 w-25 mt-0">
+                        Channel
+                      </label>
+                      <select class="form-select h6  shadow-sm" aria-label="Default select example" style="height: 25px;width: 350px;font-size: 9px;font-weight: 700; ">
+                        <option selected>Select channel</option>
+                        <option value="1">channelOne</option>
+                        <option value="2">channelTwo</option>
+                        <option value="3">channelThree</option>
+                      </select>              
+                    </div>
+
+                    <div class="d-flex mb-3">
+                      <label class="h6 mt-0" style="margin-right:10px ; width: 30.5%;" >
+                        Date & time
+                      </label>
+                      <input class="form-control shadow-sm me-4"  type="date" min="2019-06-02" style="height: 25px;width: 150px;font-size: 9px;font-weight: 700; " />
+                      <input class="form-control shadow-sm ms-4" type="time" min="2019-06-02"style="height: 25px;width: 150px;font-size: 9px;font-weight: 700; " />
+                    </div>
+
+                    <div class="d-flex mb-3">
+                      <label class="h6 me-5 w-25 mt-0">
+                        Podcast Name
+                      </label>
+                      <input class="form-control  shadow-sm" type="text "style="height: 25px;width: 350px;">
+                    </div>
+
+                    <div class="mb-4 d-flex " >
+                      <label class="form-label  w-25 mt-0" style="    margin-right: 50px;">
+                        <h6 style="margin: 0px; height: 100%; line-height: 35px; width: 120px;">Episode Summary (max 4000 char.):</h6>
+                      </label>
+                      <textarea maxlength="4000"  type="text" id="text_area" class="form-control  shadow-sm" style=" max-height: 130px;width:350px;"></textarea>                      
+                    </div> 
+                    <div class="text-center" style="margin-top: 43px;">
+                      <button type="submit"   class=" btn btn-outline-light border-0 rounded-5 shadow btn-sm w-25 "style="background: linear-gradient( #B0A8B9,#4B4453);"><h6 class="pt-1">SCHEDULE</h6></div>
+                    </div>
+                </form>
+              </div>
 
                </div>
               </div>

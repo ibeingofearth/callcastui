@@ -3,3 +3,6 @@
     border-color: pink;
     box-shadow: none;
 }
+.btn:hover{
+background: aliceblue;
+}
