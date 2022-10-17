@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid vw-100 vh-100 ps-3 pe-3">
         <div class="row w-100 h-100 m-0">
-            <div class="col-md-5 h-100  p-0">
+            <div class="col-md-5 col-sm-5 h-100  p-0">
               <!-- first section card -->
                 <div class="h-100  x overflow-auto" style=" border-right:solid 1px #e8e8e8;">
                   <h6 class="sticky-top p-3 ps-3"style="background:#fcfbff;">Talent Schedule</h6>
@@ -51,7 +51,7 @@
                           <div   class=" btn   rounded border-0 shadow-sm btn-sm w-50 p-1 "style=""><h6 class="pt-1"><i class="bi bi-people"></i></h6></div>
                           <div   class=" btn  btn-outline-light rounded border-0 shadow-sm btn-sm w-50 p-1 "style="background: linear-gradient(#df1b1b, #c72c2c,#ba3030);"><h6 class="pt-1"><i class="bi bi-trash"></i></h6></div>
                         </div>
-                        <button   class=" btn btn-outline-light rounded border-0 shadow-sm btn-sm w-100 p-1 mt-1" style="background:linear-gradient(#0096FF,#5800FF) ;"><h6 class="pt-2">JOIN</h6></button>
+                        <button   class=" btn btn-outline-light rounded border-0 shadow-sm btn-sm w-100 p-1 " style="background:linear-gradient(#0096FF,#5800FF) ;"><h6 class="pt-2">JOIN</h6></button>
 
                       </div></div></div>
 
@@ -73,7 +73,7 @@
                           <div   class=" btn btn-outline-light border-0 rounded-5 shadow btn-sm w-100 mt-3"style="background: linear-gradient(#6e77bd,#2e3ca6);"><h6 class="pt-1">JOIN</h6></div>
 
                           <div class="mt-3" style="color: white;"><h4>Oct 12<span style="font-size:8px ;">, 2022 1:18 PM</span></h4></div>
-                          <div class="mt-1" style="font-weight: 500; color:#59597e;font-size: 10px;">Starts<span >&nbsp;in 4 HRS 48 MIN 49 SEC</span></div>
+                          <div class="" style="font-weight: 500; color:#59597e;font-size: 10px;">Starts<span >&nbsp;in 4 HRS 48 MIN 49 SEC</span></div>
                         </div>
                        
                       </div></div></div> -->
@@ -190,23 +190,24 @@
                 
               
             </div>
-            <div class="col-md-7 h-100  p-0">
+            <div class="col-md-7 col-sm-7 h-100  p-0">
               <div class=" h-25  overflow-hidden">
                 
                 <h6 class="sticky-top p-3 ps-4 m-0"style="background-color:White;">Talent Schedule</h6>
 
                  <div class="mb-4 ps-4 hstack gap-3 border border-secondary-2 shadow-sm" style="border-left:solid 3px #9892c3;">
                   <img class="" src="./img_avatar.png" alt="profile" style="height:118px;width:110px ;" width="100px" style="border-radius: 80px;">
-                  <h1 style="margin-left:140px ;">Amber Green</h1>                  
+                  <h1 style="" class="d-flex p-2 bd-highligh">Amber Green</h1>                  
                 </div>
               </div>
               <div class="h-75  x overflow-hidden" style="background-color: #fbfbfd;">                              
              <div>
               <div class=" text ms-1 me-3 mt-2">
-                <form class=" mt-1 ms-1 p-3  "  >
+                <form class="  ms-1 p-3  "  >
                   <div class="position-relative pt-1 mb-4">
-                    <div class="position-absolute top-0 start-50 translate-middle"><div class="h5 "style="margin-right:80px ;">Podcast Schedule</div>                  </div>
-                    <div class="position-absolute top-0 end-0 translate-middle" style="margin-right:70px ;">
+                    <div class="position-absolute top-0 start-50 translate-middle"><div class="h5 "style="">Podcast Schedule</div>  
+                      </div>
+                    <div class="position-absolute top-0 end-0 translate-middle" style="">
                       <div class="" >
                         <div class="form-check form-switch "  for="flexSwitchCheckDefault" >
                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
@@ -263,15 +264,19 @@
                       <button type="submit"   class=" btn btn-outline-light border-0 rounded-5 shadow btn-sm w-25 "style="background: linear-gradient( #B0A8B9,#4B4453);"><h6 class="pt-1">SCHEDULE</h6></div>
                     </div>
                     <hr> -->
-                    <div class="d-flex mb-3 ">
-                      <label class="h6 me-5 w-25 mt-1 ">
+                    <hr class="col-12 m-1 mb-2"style="opacity: 0.1;" >
+
+                    <div class="d-flex mb-1">
+                      <label class="h6 me-5 w-25  ">
                         Podcast Name
                       </label>
                       <input maxlength="30" class="form-control  shadow-sm" type="text" style="height: 25px;width: 350px;">
                     </div>
 
-                     <div class="d-flex mb-3">
-                      <label class="h6 me-5 w-25 mt-0">
+                    <hr class="col-10 m-1 mb-2"style="opacity: 0.1;" >
+
+                     <div class="d-flex">
+                      <label class="h6 me-5 w-25 mt-1">
                        Time Zone
                       </label>
                       <select class="form-select  shadow-sm h6" aria-label="Default select example" style="height: 25px;width: 350px;font-size: 9px;font-weight: 700;">
@@ -281,9 +286,11 @@
                         <option value="3">zone-Three</option>
                       </select>              
                     </div>
+
+                    <hr class="col-10 m-1 mb-2" style="opacity: 0.1;">
                     
-                      <div class="d-flex mb-3">
-                      <label class="h6 me-5 w-25 mt-0">
+                      <div class="d-flex">
+                      <label class="h6 me-5 w-25 mt-1">
                         Channel
                       </label>
                       <select class="form-select h6  shadow-sm" aria-label="Default select example" style="height: 25px;width: 350px;font-size: 9px;font-weight: 700; ">
@@ -294,23 +301,29 @@
                       </select>              
                     </div>
 
-                    <div class="d-flex mb-3">
-                      <label class="h6 mt-0" style="margin-right:10px ; width: 30.5%;" >
+                    <hr class="col-10 m-1 mb-2" style="opacity: 0.1;">
+
+                    <div class="d-flex">
+                      <label class="h6 mt-1" style="margin-right:10px ; width: 30.5%;" >
                         Date & time
                       </label>
                       <input class="form-control shadow-sm me-4"  type="date" min="2019-06-02" style="height: 25px;width: 150px;font-size: 9px;font-weight: 700; " />
                       <input class="form-control shadow-sm ms-4" type="time" min="2019-06-02"style="height: 25px;width: 150px;font-size: 9px;font-weight: 700; " />
                     </div>
 
-                    <div class="d-flex mb-3">
-                      <label class="h6 me-5 w-25 mt-0">
+                    <hr class="col-10 m-1 mb-2"style="opacity: 0.1;" >
+
+                    <div class="d-flex">
+                      <label class="h6 me-5 w-25 mt-1">
                         Podcast Name
                       </label>
                       <input class="form-control  shadow-sm" type="text "style="height: 25px;width: 350px;">
                     </div>
 
+                    <hr class="col-10 m-1 mb-2" style="opacity: 0.1;" >
+
                     <div class="mb-4 d-flex " >
-                      <label class="form-label  w-25 mt-0" style="    margin-right: 50px;">
+                      <label class="form-label  w-25 mt-1" style="    margin-right: 50px;">
                         <h6 style="margin: 0px; height: 100%; line-height: 35px; width: 120px;">Episode Summary (max 4000 char.):</h6>
                       </label>
                       <textarea maxlength="4000"  type="text" id="text_area" class="form-control  shadow-sm" style=" max-height: 130px;width:350px;"></textarea>                      
